@@ -5,4 +5,4 @@ const sequelize = new Sequelize('loginSite', 'postgres', 'root', {
     dialect: 'postgres'
 });
 
-module.exports = sequelize;
+module.exports = sequelize
