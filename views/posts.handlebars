@@ -1,0 +1,13 @@
+    <h1>All Posts</h1>
+    {{#each post}}
+    <div class="post">
+      <h3>{{dataValues.title}}</h3>
+      <p>{{dataValues.content}}</p>
+      <ul>
+        <li>Author: {{dataValues.author}}</li>
+      </ul>
+    </div>
+    {{else}} 
+        <p>No posts avaible.</p>
+    {{/each}}
+    

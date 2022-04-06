@@ -1,0 +1,16 @@
+       <h1>Make a Post</h1>
+      {{#each errors}}
+        <p>{{text}}</p>
+      {{/each}}
+      <form action="/posts/add" method="POST">
+        <div class="input-group">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" class="input-box" placeholder="Title"
+            maxlength="100" value={{title}}>
+        </div>
+        <div class="input-group">
+          <label for="content">Content</label>
+          <input type="text" name="content" id="content" class="input-box" placeholder="content" value={{content}}>
+        </div>
+        <input type="submit" value="Post" class="btn btn-reverse">
+      </form>
